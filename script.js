@@ -29,7 +29,7 @@ try {
             setTimeout(() => {
                 logoPopup.remove();
             }, 800);
-        }, 3500); // Total animation duration
+        }, 3500); // Total animation duration (adjust as needed for the loading text fade)
     }
     
     // Start logo popup animation
@@ -120,8 +120,9 @@ try {
 
     function animate() {
         requestAnimationFrame(animate);
-        stars.position.z += 0.2;
-        if (stars.position.z > 1000) {
+        // This moves the stars towards the camera, then resets them
+        stars.position.z += 0.2; // Adjust speed as needed
+        if (stars.position.z > 1000) { // If stars go too far, reset
             stars.position.z = -1000;
         }
         renderer.render(scene, camera);

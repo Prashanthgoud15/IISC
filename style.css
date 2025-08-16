@@ -192,53 +192,11 @@ nav {
 
 .logo-popup-content {
     text-align: center;
-    animation: logoReveal 2.5s ease-out;
+    /* Removed animation for simpler loading screen */
 }
 
-.popup-logo {
-    width: 200px;
-    height: 200px;
-    margin: 0 auto 2rem;
-    animation: logoFloat 3s ease-in-out infinite;
-    filter: drop-shadow(0 0 20px var(--secondary-glow)); /* Added glow to image logo */
-}
-
-.popup-title {
-    font-size: 3rem;
-    font-weight: 900;
-    background: linear-gradient(45deg, #ff6b35, #ff8c00, #9446ff, #7c4dff);
-    background-size: 300% 300%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: gradientShift 3s ease-in-out infinite, titleReveal 1s ease-out 0.5s both;
-}
-
-.popup-subtitle {
-    font-size: 1.2rem;
-    color: #94a3b8;
-    margin-top: 1rem;
-    opacity: 0;
-    animation: subtitleReveal 1s ease-out 1s both;
-}
-
-.loading-bar {
-    width: 200px;
-    height: 4px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 2px;
-    margin: 2rem auto 0;
-    overflow: hidden;
-    position: relative;
-}
-
-.loading-progress {
-    height: 100%;
-    background: linear-gradient(90deg, #ff6b35, #ff8c00, #9446ff);
-    border-radius: 2px;
-    width: 0%;
-    animation: loadingProgress 2s ease-out 1.5s;
-}
+/* Removed specific styles for popup-logo, popup-title, popup-subtitle, loading-bar, loading-progress
+   as they are no longer used in the simplified loading screen HTML. */
 
 .particles {
     position: absolute;
@@ -258,6 +216,7 @@ nav {
     animation: particleFloat 4s linear infinite;
 }
 
+/* Kept general animation keyframes if they are used elsewhere, or just for reference */
 @keyframes logoReveal {
     0% {
         opacity: 0;
