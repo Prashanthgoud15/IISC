@@ -12,17 +12,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Logo Popup Animation (Simplified Loading Screen) -->
+    <!-- Logo Popup Animation -->
     <div class="logo-popup" id="logoPopup">
         <div class="particles" id="particles"></div>
         <div class="logo-popup-content">
-            <div class="flex items-center justify-center">
-                <!-- Loading Spinner SVG -->
-                <svg class="animate-spin h-8 w-8 text-white mr-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                </svg>
-                <p class="text-xl font-bold text-white">Loading...</p>
+            <!-- Image for the Logo Popup -->
+            <img src="iisc.png" alt="IIC PESCE Logo" class="popup-logo">
+            <h1 class="popup-title">IIC PESCE</h1>
+            <p class="popup-subtitle">Institution's Innovation Council</p>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
             </div>
             <button id="skipAnimation" class="mt-8 px-6 py-2 text-sm text-slate-400 hover:text-white transition-colors duration-300 border border-slate-600 hover:border-slate-400 rounded-lg">
                 Skip Animation
@@ -362,7 +361,7 @@
             <section id="staff-team" class="section">
                 <div class="max-w-6xl mx-auto">
                     <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 section-title">Meet the Staff Team</h2>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8">
                         <!-- Staff Team Member Card 1 -->
                         <div class="card team-card rounded-lg text-center group">
                             <div class="relative overflow-hidden">
@@ -441,6 +440,32 @@
                                 <p class="text-slate-500 text-sm">Assistant Professor, Mechanical</p>
                             </div>
                         </div>
+                        <!-- Staff Team Member Card 4 -->
+                        <div class="card team-card rounded-lg text-center group">
+                            <div class="relative overflow-hidden">
+                                <img class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110" src="https://placehold.co/400x400/1a1a1a/ffffff?text=Dr.+Suresh+Rao" alt="Dr. Suresh Rao Photo" onerror="this.onerror=null;this.src='https://placehold.co/400x400/1a1a1a/ffffff?text=Error';">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                <div class="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <div class="flex justify-center space-x-3">
+                                        <a href="#" class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors">
+                                            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                            </svg>
+                                        </a>
+                                        <a href="#" class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors">
+                                            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-white">Dr. Suresh Rao</h3>
+                                <p class="text-slate-400 mb-2">Faculty Coordinator</p>
+                                <p class="text-slate-500 text-sm">Professor, Civil Engineering</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -449,7 +474,7 @@
             <section id="student-team" class="section">
                 <div class="max-w-6xl mx-auto">
                     <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 section-title">Meet the Student Team</h2>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
                         <!-- Student Team Member Card 1 -->
                         <div class="card team-card rounded-lg text-center group">
                             <div class="relative overflow-hidden">
@@ -552,6 +577,162 @@
                                 <h3 class="text-xl font-bold text-white">Neha Singh</h3>
                                 <p class="text-slate-400 mb-2">Treasurer</p>
                                 <p class="text-slate-500 text-sm">Information Science, 3rd Year</p>
+                            </div>
+                        </div>
+                        <!-- Student Team Member Card 5 -->
+                        <div class="card team-card rounded-lg text-center group">
+                            <div class="relative overflow-hidden">
+                                <img class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110" src="https://placehold.co/400x400/1a1a1a/ffffff?text=Arjun+Reddy" alt="Arjun Reddy Photo" onerror="this.onerror=null;this.src='https://placehold.co/400x400/1a1a1a/ffffff?text=Error';">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                <div class="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <div class="flex justify-center space-x-3">
+                                        <a href="#" class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors">
+                                            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                            </svg>
+                                        </a>
+                                        <a href="#" class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors">
+                                            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-white">Arjun Reddy</h3>
+                                <p class="text-slate-400 mb-2">Event Coordinator</p>
+                                <p class="text-slate-500 text-sm">Computer Science, 3rd Year</p>
+                            </div>
+                        </div>
+                        <!-- Student Team Member Card 6 -->
+                        <div class="card team-card rounded-lg text-center group">
+                            <div class="relative overflow-hidden">
+                                <img class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110" src="https://placehold.co/400x400/1a1a1a/ffffff?text=Deepa+M" alt="Deepa M Photo" onerror="this.onerror=null;this.src='https://placehold.co/400x400/1a1a1a/ffffff?text=Error';">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                <div class="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <div class="flex justify-center space-x-3">
+                                        <a href="#" class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors">
+                                            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                            </svg>
+                                        </a>
+                                        <a href="#" class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors">
+                                            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-white">Deepa M</h3>
+                                <p class="text-slate-400 mb-2">Design Lead</p>
+                                <p class="text-slate-500 text-sm">Architecture, 3rd Year</p>
+                            </div>
+                        </div>
+                        <!-- Student Team Member Card 7 -->
+                        <div class="card team-card rounded-lg text-center group">
+                            <div class="relative overflow-hidden">
+                                <img class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110" src="https://placehold.co/400x400/1a1a1a/ffffff?text=Vikram+S" alt="Vikram S Photo" onerror="this.onerror=null;this.src='https://placehold.co/400x400/1a1a1a/ffffff?text=Error';">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                <div class="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <div class="flex justify-center space-x-3">
+                                        <a href="#" class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors">
+                                            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                            </svg>
+                                        </a>
+                                        <a href="#" class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors">
+                                            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-white">Vikram S</h3>
+                                <p class="text-slate-400 mb-2">Technical Lead</p>
+                                <p class="text-slate-500 text-sm">Electronics, 3rd Year</p>
+                            </div>
+                        </div>
+                        <!-- Student Team Member Card 8 -->
+                        <div class="card team-card rounded-lg text-center group">
+                            <div class="relative overflow-hidden">
+                                <img class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110" src="https://placehold.co/400x400/1a1a1a/ffffff?text=Pooja+R" alt="Pooja R Photo" onerror="this.onerror=null;this.src='https://placehold.co/400x400/1a1a1a/ffffff?text=Error';">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                <div class="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <div class="flex justify-center space-x-3">
+                                        <a href="#" class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors">
+                                            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                            </svg>
+                                        </a>
+                                        <a href="#" class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors">
+                                            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-white">Pooja R</h3>
+                                <p class="text-slate-400 mb-2">Content Creator</p>
+                                <p class="text-slate-500 text-sm">Information Science, 2nd Year</p>
+                            </div>
+                        </div>
+                        <!-- Student Team Member Card 9 -->
+                        <div class="card team-card rounded-lg text-center group">
+                            <div class="relative overflow-hidden">
+                                <img class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110" src="https://placehold.co/400x400/1a1a1a/ffffff?text=Sanjay+K" alt="Sanjay K Photo" onerror="this.onerror=null;this.src='https://placehold.co/400x400/1a1a1a/ffffff?text=Error';">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                <div class="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <div class="flex justify-center space-x-3">
+                                        <a href="#" class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors">
+                                            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                            </svg>
+                                        </a>
+                                        <a href="#" class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors">
+                                            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-white">Sanjay K</h3>
+                                <p class="text-slate-400 mb-2">Marketing Lead</p>
+                                <p class="text-slate-500 text-sm">Mechanical, 2nd Year</p>
+                            </div>
+                        </div>
+                        <!-- Student Team Member Card 10 -->
+                        <div class="card team-card rounded-lg text-center group">
+                            <div class="relative overflow-hidden">
+                                <img class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110" src="https://placehold.co/400x400/1a1a1a/ffffff?text=Nisha+V" alt="Nisha V Photo" onerror="this.onerror=null;this.src='https://placehold.co/400x400/1a1a1a/ffffff?text=Error';">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                <div class="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <div class="flex justify-center space-x-3">
+                                        <a href="#" class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors">
+                                            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                            </svg>
+                                        </a>
+                                        <a href="#" class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors">
+                                            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-white">Nisha V</h3>
+                                <p class="text-slate-400 mb-2">Outreach Coordinator</p>
+                                <p class="text-slate-500 text-sm">Electronics, 2nd Year</p>
                             </div>
                         </div>
                     </div>
